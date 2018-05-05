@@ -30,7 +30,8 @@
         <div id="container">
 
             <header>
-                <h1>Plateforme de test - Mon cartable connecté</h1>
+                <img src="includes/logo.png" id="logo">
+                <h1></br>Plateforme de test - Mon cartable connecté</h1>
             </header>
 
             <div id="interface">
