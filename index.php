@@ -22,7 +22,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Accueil - Mon Cartable Connecté</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="includes/index.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="includes/css/index.css" />
         <script src="main.js"></script>
     </head>
 
@@ -30,7 +30,7 @@
         <div id="container">
 
             <header>
-                <img src="includes/logo.png" id="logo">
+                <img src="includes/images/logo.png" id="logo">
                 <h1></br>Plateforme de test - Mon cartable connecté</h1>
             </header>
 
