@@ -23,7 +23,7 @@
         <title>Accueil - Mon Cartable Connecté</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="includes/css/index.css" />
-        <script src="main.js"></script>
+        <script src="includes/js/index.js"></script>
     </head>
 
     <body>
