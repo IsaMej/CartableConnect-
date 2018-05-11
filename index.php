@@ -27,14 +27,14 @@
     </head>
 
     <body>
-        <div id="container">
+        <div class="container">
 
             <header>
                 <img src="includes/images/logo.png" id="logo">
                 <h1></br>Plateforme de test - Mon cartable connecté</h1>
             </header>
 
-            <div id="interface">
+            <div class="navigation">
                 <article id="testDebit">
                     <h2>Test du débit internet</h2>
                 </article>
@@ -46,8 +46,42 @@
                 </article>
             </div>
 
+            <div class="bandeau-login">
+            <div class="chat-login">
+                
+                 <form method="POST" action="index.php">
+                            <input type="email" name="email" placeHolder="Votre e-mail"/>
+                            <input type="password" name="password" placeHolder="Votre mot de passe"/> <br>
+                            <input id="sub" type="submit" name="submitForm" value="Valider">
+                 </form>
+                
+                
+            <?php
+            
+                function formFunc() 
+                {
+                    if(isset($_POST['submitForm']))
+                    {
+                        $db = db_connect();
+                        $req = $db->prepare("SELECT * FROM users WHERE email_user = :email");
+                        $req->execute(array("email" => $_POST['email']));
+                        
+                        while($data = $req->fetch())
+                        {
+                            if($data['pwd_user'] == $_POST['password'])
+                            {
+                                header("Location: accountPage.php");
+                                exit;
+                            }
+                        }
+                    }
+                }
+            ?>
+            </div>
+            </div>
+
             <footer>
-                Copyright - <a href="http://www.moncartableconnecte.fr/" target ="_blank">Le cartable connecté</a>
+                Copyright - <a href="http://www.moncartableconnecte.fr/" target ="_blank">Mon cartable connecté</a>
             </footer>
         </div>
     </body>
