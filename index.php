@@ -1,6 +1,6 @@
 <?php
 include ('includes/db_connect.inc.php');
-//include ('GestionPanda.php');
+include ('GestionPanda.php');
 $db=db_connect();
 
     echo "Bienvenue sur ton cartable connecté ! </br></br>";
