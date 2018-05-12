@@ -20,7 +20,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Accueil - Mon Cartable Connecté</title>
+        <title>Connexion - Mon Cartable Connecté</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="includes/css/index.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
@@ -31,19 +31,19 @@
         <div class="container">
 
             <header>
-                <img src="includes/images/logotext.svg" id="logo">
-                <h1></br>Plateforme de test</h1>
+                <img src="includes/images/logoV2.svg" id="logo">
+                <!--<h1></br>Plateforme de test</h1>-->
             </header>
 
             <div class="navigation">
                 <article id="testDebit">
-                    <h2>Test du débit internet</h2>
+                    <h2>Bande passante</h2>
+                </article>
+                <article id="testMiroir">
+                    <h2>Miroir</h2>
                 </article>
                 <article id="testVideo">
-                    <h2>Test de la qualité vidéo</h2>
-                </article>
-                <article id="testSon">
-                    <h2>Test du son</h2>
+                    <h2>Vidéo</h2>
                 </article>
         </div>
 
