@@ -28,9 +28,15 @@ h2
 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    color: #333;
-    font-size: 1.5vw;
+    color: #5F6163;
+    font-size: 1.2vw;
+}
 
+h3
+{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1vw;
 }
 
 #logo
@@ -40,6 +46,12 @@ h2
     padding-bottom: 5%;
     margin-top: -5%;
     
+}
+
+#astuces
+{
+    width: 5%;
+    height: 8%;
 }
 
 .navigation
@@ -96,23 +108,35 @@ h2
 
 .bandeau-debit
 {
-    background-color: #E6E6E6;
+    
+    height: 50%;
+    background-color: #35b5b7;
     margin-bottom: 2%;
-    border-top-color: #FFCF0D; border-bottom-color: #FFCF0D; border-width: 4px; border-style: solid;
+    padding: 1.2%;
+    /*border-top-color: #FFCF0D; border-bottom-color: #FFCF0D; border-width: 4px; border-style: solid;*/
     border-left: none;
     border-right: none;
+    color: #FFFFFF;
 }
 
 .bandeau-miroir
 {
-    background-color: #E6E6E6;
+    
+    height: 50%;
+    /*background-color: #E6E6E6;*/
+    background-color: #FFFFFF;
     margin-bottom: 2%;
-    border-top-color: #35b5b7; border-bottom-color: #35b5b7; border-width: 4px; border-style: solid;
+    /*border-top-color: #35b5b7; border-bottom-color: #35b5b7; border-width: 4px; border-style: solid;*/
+    padding: 1.2%;
 }
 
 .bandeau-video
 {
-    background-color: #E6E6E6;
+    
+    height: 50%;
+    background-color: #35b5b7;
     margin-bottom: 2%;
-    border: #333; border-width: 4px; border-style: solid;
+    padding: 1.2%;
+    color: #FFFFFF;
+    /*border: #333; border-width: 4px; border-style: solid;*/
 }
