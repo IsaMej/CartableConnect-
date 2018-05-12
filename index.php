@@ -11,7 +11,7 @@
     updateAccount();
     createOp();*/
 
-
+    include ('db_connect.inc.php');
 ?> 
 
 <!DOCTYPE <!DOCTYPE html>
@@ -49,36 +49,33 @@
 
             <div class="bandeau-login">
             <div class="chat-login">
-                
-                 <form method="POST" action="index.php">
-                            <input type="email" name="email" placeHolder="Votre e-mail"/>
-                            <input type="password" name="password" placeHolder="Votre mot de passe"/> <br>
-                            <input id="sub" type="submit" name="submitForm" value="Valider">
-                 </form>
-                
-                
-            <?php
-            
+            <?php 
                 function formFunc() 
                 {
                     if(isset($_POST['submitForm']))
                     {
                         $db = db_connect();
-                        $req = $db->prepare("SELECT * FROM users WHERE email_user = :email");
+                        $req = $db->prepare("SELECT * FROM users WHERE mail = :email");
                         $req->execute(array("email" => $_POST['email']));
                         
                         while($data = $req->fetch())
                         {
-                            if($data['pwd_user'] == $_POST['password'])
+                            if($data['password'] == $_POST['password'])
                             {
-                                header("Location: accountPage.php");
+                                header("Location: tests.php");
                                 exit;
                             }
                         }
                     }
                 }
+                formFunc();
             ?>
-            </div>
+                 <form method="POST" action="index.php">
+                        <input type="email" name="email" placeHolder="Votre e-mail"/>
+                        <input type="password" name="password" placeHolder="Votre mot de passe"/> <br>
+                        <input id="sub" type="submit" name="submitForm" value="Valider">
+                 </form>
+                </div>
             </div>
 
             <footer>
