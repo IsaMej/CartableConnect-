@@ -35,7 +35,7 @@
                 <!--<h1></br>Plateforme de test</h1>-->
             </header>
 
-            <div class="navigation">
+            <!--<div class="navigation">
                 <article id="testDebit">
                     <h2>Bande passante</h2>
                 </article>
@@ -45,7 +45,7 @@
                 <article id="testVideo">
                     <h2>Vidéo</h2>
                 </article>
-        </div>
+            </div>-->
 
             <div class="bandeau-login">
             <div class="chat-login">
