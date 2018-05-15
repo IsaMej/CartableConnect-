@@ -31,6 +31,13 @@
                 </article>
             </div>
 
+        <div class="intro">
+            <div class="text-intro">
+            <?php
+                echo "Fais les tests et vérifie que tu peux bien utiliser ta tablette de l'endroit où tu es !";
+            ?>
+            </div>
+        </div>
         
         <div class="container-tests">
              <div class="bandeau-debit">
@@ -64,6 +71,14 @@
                 Copyright - <a href="http://www.moncartableconnecte.fr/" target ="_blank">Mon cartable connecté</a>
             </footer>
         </div>
+
+        <div class="loader"></div>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("1000");
+        })
+        </script>
     </body>
 
 </html>

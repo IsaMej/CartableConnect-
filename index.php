@@ -11,7 +11,7 @@
     updateAccount();
     createOp();*/
 
-    include ('db_connect.inc.php');
+
 ?> 
 
 <!DOCTYPE <!DOCTYPE html>
@@ -24,6 +24,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" media="screen" href="includes/css/index.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster" rel="stylesheet">
+
         <script src="includes/js/index.js"></script>
     </head>
 
@@ -49,33 +51,36 @@
 
             <div class="bandeau-login">
             <div class="chat-login">
-            <?php 
+                
+                 <form method="POST" action="index.php">
+                            <input type="email" name="email" placeHolder="Votre e-mail"/>
+                            <input type="password" name="password" placeHolder="Votre mot de passe"/> <br>
+                            <input id="sub" type="submit" name="submitForm" value="Valider">
+                 </form>
+                
+                
+            <?php
+            
                 function formFunc() 
                 {
                     if(isset($_POST['submitForm']))
                     {
                         $db = db_connect();
-                        $req = $db->prepare("SELECT * FROM users WHERE mail = :email");
+                        $req = $db->prepare("SELECT * FROM users WHERE email_user = :email");
                         $req->execute(array("email" => $_POST['email']));
                         
                         while($data = $req->fetch())
                         {
-                            if($data['password'] == $_POST['password'])
+                            if($data['pwd_user'] == $_POST['password'])
                             {
-                                header("Location: tests.php");
+                                header("Location: accountPage.php");
                                 exit;
                             }
                         }
                     }
                 }
-                formFunc();
             ?>
-                 <form method="POST" action="index.php">
-                        <input type="email" name="email" placeHolder="Votre e-mail"/>
-                        <input type="password" name="password" placeHolder="Votre mot de passe"/> <br>
-                        <input id="sub" type="submit" name="submitForm" value="Valider">
-                 </form>
-                </div>
+            </div>
             </div>
 
             <footer>
