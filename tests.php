@@ -21,13 +21,13 @@
 
             <div class="navigation">
                 <article id="testDebit">
-                    <h2>Bande passante</h2>
+                    <h2 onclick="selected(1)">Bande passante</h2>
                 </article>
                 <article id="testMiroir">
-                    <h2>Miroir</h2>
+                    <h2 onclick="selected(2)">Miroir</h2>
                 </article>
                 <article id="testVideo">
-                    <h2>Vidéo</h2>
+                    <h2 onclick="selected(3)">Vidéo</h2>
                 </article>
             </div>
 
@@ -40,7 +40,7 @@
         </div>
         
         <div class="container-tests">
-             <div class="bandeau-debit">
+             <div class="bandeau-debit" id="debit">
                 <?php
                     echo "<h3>Test de la bande passante </h3></br></br>";
                     
@@ -52,14 +52,14 @@
                 ?>
             </div>
                     
-            <div class="bandeau-miroir">
+            <div class="bandeau-miroir" id="miroir">
                 <?php
                     echo "<h3>Test vidéo en miroir </3></br></br>";
                     echo "Vois-tu ton image appraître en double sur l'écran? </br></br>";
                 ?>
             </div>
 
-            <div class="bandeau-video">
+            <div class="bandeau-video" id="video">
                 <?php
                     echo "<h3>Test vidéo avec ta classe !</3> </br></br>"
                 ?>

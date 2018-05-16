@@ -54,6 +54,21 @@ h3
     height: 8%;
 }
 
+#debit
+{
+    display: none;
+}
+    
+#miroir
+{
+    display: none;
+}
+
+#video
+{
+    display: none;
+}
+
 .navigation
 {
     /*Background-color: #c5cfe0;*/
@@ -83,8 +98,8 @@ h3
     display: flex;
     align-items: center;
     display: flex;
-  flex-direction: column;
-  justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bandeau-login
@@ -181,5 +196,3 @@ h3
     width : 100%;
     cursor : wait;
 }
-    
-    
