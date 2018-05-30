@@ -82,22 +82,21 @@
         </script>
 
         <div class="container">
+                <header>
+                    <img src="includes/images/logoV2.svg" id="logo">
+                </header>
 
-            <header>
-                <img src="includes/images/logoV2.svg" id="logo">
-            </header>
+                <div class="intro">
+                    <?php
+                        echo "Fais les tests et vérifie que tu peux bien utiliser ta tablette de l'endroit où tu es !";
+                    ?>
+                </div>
 
-            <div class="intro">
-                <?php
-                    echo "Fais les tests et vérifie que tu peux bien utiliser ta tablette de l'endroit où tu es !";
-                ?>
-            </div>
-
-            <div class="navigation">
-                <button type="button" onclick="window.location.href='includes/php/testdebit.php'">Bande passante</button>
-                <button type="button" onclick="window.location.href='includes/php/testmiroir.php'">Miroir</button>
-                <button type="button" onclick="window.location.href='includes/php/testvisio.php'">Vidéo</button>
-            </div>
+                <div class="navigation">
+                    <button type="button" onclick="window.location.href='includes/php/testdebit.php'">Bande passante</button>
+                    <button type="button" onclick="window.location.href='includes/php/testmiroir.php'">Miroir</button>
+                    <button type="button" onclick="window.location.href='includes/php/testvisio.php'">Vidéo</button>
+                </div>
             
             <div class="container-tests">
                 <div class="bandeau-debit">
