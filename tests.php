@@ -12,6 +12,65 @@
     </head>
 
     <body>
+            <a name="haut" id="haut"></a>  
+            <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+            
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function(ev) {
+                document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+            };
+            });
+            </script>
+
+            <script>
+                // javascript/defilement_doux
+                document.addEventListener('DOMContentLoaded', function() {
+                var aLiens = document.querySelectorAll('a[href*="#"]');
+                for(var i=0, len = aLiens.length; i<len; i++) {
+                    aLiens[i].onclick = function () {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = this.getAttribute("href").slice(1);
+                        if (target.length) {
+                        scrollTo(document.getElementById(target).offsetTop, 1000);
+                        return false;
+                        }
+                    }
+                    };
+                }
+                });
+            
+                function scrollTo(element, duration) {
+                var e = document.documentElement;
+                if(e.scrollTop===0){
+                    var t = e.scrollTop;
+                    ++e.scrollTop;
+                    e = t+1===e.scrollTop--?e:document.body;
+                }
+                scrollToC(e, e.scrollTop, element, duration);
+                }
+                
+                function scrollToC(element, from, to, duration) {
+                if (duration < 0) return;
+                if(typeof from === "object")from=from.offsetTop;
+                if(typeof to === "object")to=to.offsetTop;
+                scrollToX(element, from, to, 0, 1/duration, 20, easeOutCuaic);
+                }
+                
+                function scrollToX(element, x1, x2, t, v, step, operacion) {
+                if (t < 0 || t > 1 || v <= 0) return;
+                element.scrollTop = x1 - (x1-x2)*operacion(t);
+                t += v * step;
+                setTimeout(function() {
+                    scrollToX(element, x1, x2, t, v, step, operacion);
+                }, step);
+                }
+                
+                function easeOutCuaic(t){
+                t--;
+                return t*t*t+1;
+                }
+                </script>
         <div class="container">
 
             <header>
@@ -20,6 +79,12 @@
             </header>
 
             <div class="navigation">
+                        <button type="button" onclick="window.location.href='../CartableConnecté/testdebit.php'">Bande passante</button>
+                        <button type="button" onclick="window.location.href='../CartableConnecté/testmiroir.php'">Miroir</button>
+                        <button type="button" onclick="window.location.href='../CartableConnecté/testvisio.htp'">Vidéo</button>
+            </div>
+            <br />
+            <!--<div class="navigation">
                 <article id="testDebit">
                     <h2>Bande passante</h2>
                 </article>
@@ -29,7 +94,7 @@
                 <article id="testVideo">
                     <h2>Vidéo</h2>
                 </article>
-            </div>
+            </div>-->
 
         <div class="intro">
             <div class="text-intro">
@@ -41,6 +106,7 @@
         
         <div class="container-tests">
              <div class="bandeau-debit">
+                <div class="titre-debit">
                 <?php
                     echo "<h3>Test de la bande passante </h3></br></br>";
                     
@@ -51,20 +117,41 @@
                     echo "Astuces 2 : Assure toi que les câbles ne soient ni tordus ni abîmés.</br></br>";
                 ?>
             </div>
+            <div class="start-debit">
+                <?php
+                    echo "<h3>Appuie sur le bouton"
+                ?>
+            </div>
+            </div>
                     
             <div class="bandeau-miroir">
+                <div class="titre-miroir">
                 <?php
                     echo "<h3>Test vidéo en miroir </3></br></br>";
                     echo "Vois-tu ton image appraître en double sur l'écran? </br></br>";
                 ?>
             </div>
+            <div class="start-miroir">
+                <?php
+                    echo "<h3>Appuie sur le bouton"
+                ?>
+            </div>
+            </div>
 
             <div class="bandeau-video">
+                <div class="titre-video">
                 <?php
                     echo "<h3>Test vidéo avec ta classe !</3> </br></br>"
                 ?>
             </div>
-        </div>
+            <div class="start-debit">
+                <?php
+                    echo "<h3>Appuie sur le bouton"
+                ?>
+            </div>
+            </div>
+
+            </div>
 
 
             <footer>
