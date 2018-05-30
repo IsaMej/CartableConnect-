@@ -93,9 +93,18 @@
                 </div>
 
                 <div class="navigation">
-                    <a href="#testDebit"><button class="buttonNav" type="button">Bande passante</button></a>
-                    <a href="#testMiroir"><button class="buttonNav" type="button">Miroir</button></a>
-                    <a href="#testVideo"><button class="buttonNav" type="button">Vidéo</button></a>
+                    <div class="nav">
+                        <a href="#testDebit"><button class="buttonNav" type="button">Bande passante</button></a>
+                        <div class="miniBlock"></div>
+                    </div>
+                    <div class="nav">
+                        <a href="#testMiroir"><button class="buttonNav" type="button">Miroir</button></a>
+                        <div class="miniBlock"></div>
+                    </div>
+                    <div class="nav">
+                        <a href="#testVideo"><button class="buttonNav" type="button">Vidéo</button></a>
+                        <div class="miniBlock"></div>
+                    </div>
                 </div>
             
             <div class="container-tests">
