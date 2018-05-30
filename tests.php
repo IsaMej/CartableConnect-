@@ -79,9 +79,9 @@
             </header>
 
             <div class="navigation">
-                        <button type="button" onclick="window.location.href='../CartableConnecté/testdebit.php'">Bande passante</button>
-                        <button type="button" onclick="window.location.href='../CartableConnecté/testmiroir.php'">Miroir</button>
-                        <button type="button" onclick="window.location.href='../CartableConnecté/testvisio.htp'">Vidéo</button>
+                        <button type="button" onclick="window.location.href='includes/php/testdebit.php'">Bande passante</button>
+                        <button type="button" onclick="window.location.href='includes/php/testmiroir.php'">Miroir</button>
+                        <button type="button" onclick="window.location.href='includes/php/testvisio.htp'">Vidéo</button>
             </div>
             <br />
             <!--<div class="navigation">
