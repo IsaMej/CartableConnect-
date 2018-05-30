@@ -93,13 +93,13 @@
                 </div>
 
                 <div class="navigation">
-                    <button type="button" onclick="window.location.href='includes/php/testdebit.php'">Bande passante</button>
-                    <button type="button" onclick="window.location.href='includes/php/testmiroir.php'">Miroir</button>
-                    <button type="button" onclick="window.location.href='includes/php/testvisio.php'">Vidéo</button>
+                    <a href="#testDebit"><button class="buttonNav" type="button">Bande passante</button></a>
+                    <a href="#testMiroir"><button class="buttonNav" type="button">Miroir</button></a>
+                    <a href="#testVideo"><button class="buttonNav" type="button">Vidéo</button></a>
                 </div>
             
             <div class="container-tests">
-                <div class="bandeau-debit">
+                <div class="bandeau-debit" id="testDebit">
                     <div class="titre-debit">
                         <?php
                             echo "<h3>Test de la bande passante </h3></br></br>";                    
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                         
-                <div class="bandeau-miroir">
+                <div class="bandeau-miroir" id="testMiroir">
                     <div class="titre-miroir">
                         <?php
                             echo "<h3>Test vidéo en miroir </3></br></br>";
@@ -134,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="bandeau-video">
+                <div class="bandeau-video" id="testVideo">
                     <div class="titre-video">
                         <?php
                             echo "<h3>Test vidéo avec ta classe !</3> </br></br>"
