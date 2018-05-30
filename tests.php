@@ -79,9 +79,9 @@
             </header>
 
             <div class="navigation">
-                        <button type="button" onclick="window.location.href='../CartableConnecté/testdebit.php'">Bande passante</button>
-                        <button type="button" onclick="window.location.href='../CartableConnecté/testmiroir.php'">Miroir</button>
-                        <button type="button" onclick="window.location.href='../CartableConnecté/testvisio.htp'">Vidéo</button>
+                        <button type="button" onclick="window.location.href='includes/php/testdebit.php'">Bande passante</button>
+                        <button type="button" onclick="window.location.href='includes/php/testmiroir.php'">Miroir</button>
+                        <button type="button" onclick="window.location.href='includes/php/testvisio.htp'">Vidéo</button>
             </div>
             <br />
             <!--<div class="navigation">
@@ -105,12 +105,7 @@
         </div>
         
         <div class="container-tests">
-<<<<<<< HEAD
-             <div class="bandeau-debit">
-                <div class="titre-debit">
-=======
              <div class="bandeau-debit" id="debit">
->>>>>>> 901d515696b55b9598059f4541e61775c14e4708
                 <?php
                     echo "<h3>Test de la bande passante </h3></br></br>";
                     
@@ -128,12 +123,7 @@
             </div>
             </div>
                     
-<<<<<<< HEAD
-            <div class="bandeau-miroir">
-                <div class="titre-miroir">
-=======
             <div class="bandeau-miroir" id="miroir">
->>>>>>> 901d515696b55b9598059f4541e61775c14e4708
                 <?php
                     echo "<h3>Test vidéo en miroir </3></br></br>";
                     echo "Vois-tu ton image appraître en double sur l'écran? </br></br>";
@@ -146,12 +136,7 @@
             </div>
             </div>
 
-<<<<<<< HEAD
-            <div class="bandeau-video">
-                <div class="titre-video">
-=======
             <div class="bandeau-video" id="video">
->>>>>>> 901d515696b55b9598059f4541e61775c14e4708
                 <?php
                     echo "<h3>Test vidéo avec ta classe !</3> </br></br>"
                 ?>
