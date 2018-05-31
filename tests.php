@@ -133,14 +133,14 @@
                 <div class="bandeau-miroir" id="testMiroir">
                     <div class="titre-miroir">
                         <?php
-                            echo "<h3>Test vidéo en miroir </3></br></br>";
+                            echo "<h3>Test vidéo en miroir </h3></br></br>";
                             echo "Vois-tu ton image appraître en double sur l'écran? </br></br>";
                         ?>
                     </div>
                     <div class="start-miroir">
                     <img src="includes/images/smiley-jaune.jpeg" id="smiley-jaune">
                         <?php
-                            echo "<h3>Appuie sur le bouton"
+                            echo "<h3>Appuie sur le bouton</h3>"
                         ?>
                     </div>
                 </div>
@@ -148,13 +148,13 @@
                 <div class="bandeau-video" id="testVideo">
                     <div class="titre-video">
                         <?php
-                            echo "<h3>Test vidéo avec ta classe !</3> </br></br>"
+                            echo "<h3>Test vidéo avec ta classe !</h3> </br></br>"
                         ?>
                     </div>
                     <div class="start-debit">
                     <img src="includes/images/smiley-rouge.jpeg" id="smiley-rouge">
                         <?php
-                            echo "<h3>Appuie sur le bouton"
+                            echo "<h3>Appuie sur le bouton</h3>"
                         ?>
                     </div>
                 </div>
