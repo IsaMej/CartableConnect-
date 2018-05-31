@@ -121,6 +121,7 @@
                             echo "<h3>Appuie sur le bouton</h3>"
                         ?>
                         <div class="astuceDebit">
+                        <img src="includes/images/smiley-vert.png" id="smiley-vert">
                             <?php
                                 echo "Astuces 1 : Eloigne le modem des sources de chaleur comme les radiateurs et dépoussière-le.                                            Place-le modem près des équipements informatiques.</br></br>";
                                 echo "Astuces 2 : Assure toi que les câbles ne soient ni tordus ni abîmés.</br></br>";
@@ -137,6 +138,7 @@
                         ?>
                     </div>
                     <div class="start-miroir">
+                    <img src="includes/images/smiley-jaune.jpeg" id="smiley-jaune">
                         <?php
                             echo "<h3>Appuie sur le bouton"
                         ?>
@@ -150,6 +152,7 @@
                         ?>
                     </div>
                     <div class="start-debit">
+                    <img src="includes/images/smiley-rouge.jpeg" id="smiley-rouge">
                         <?php
                             echo "<h3>Appuie sur le bouton"
                         ?>
