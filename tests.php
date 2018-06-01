@@ -88,7 +88,7 @@
 
                 <div class="intro">
                     <?php
-                        echo "Fais les tests et vérifie que tu peux bien utiliser ta tablette de l'endroit où tu es !";
+                        echo "Fais les tests et vérifie que tu peux bien utiliser la tablette de l'endroit où tu es !";
                     ?>
                 </div>
 
@@ -111,9 +111,8 @@
                 <div class="bandeau-debit" id="testDebit">
                     <div class="titre-debit">
                         <?php
+                            echo "<h3>1</h3></br>";
                             echo "<h3>Test de la bande passante </h3></br></br>";                    
-                            echo "Résultat : Le débit de connexion est trop lent.</br></br>";
-                            echo '<img src="includes/images/astuces.png" id="astuces">';
                         ?>
                     </div>
                     <div class="start-debit">
@@ -121,8 +120,13 @@
                             echo "<h3>Appuie sur le bouton</h3>"
                         ?>
                         <div class="astuceDebit">
-                        <img src="includes/images/smiley-vert.png" id="smiley-vert">
+                        <img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-debit">
+                        <img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-debit">
+                        <img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-debit">
+                        <img src="includes/images/go.png" class="go">
                             <?php
+                                echo '<img src="includes/images/astuces.png" id="astuces">';
+                                echo "Résultat : Le débit de connexion est trop lent.</br></br>";
                                 echo "Astuces 1 : Eloigne le modem des sources de chaleur comme les radiateurs et dépoussière-le.                                            Place-le modem près des équipements informatiques.</br></br>";
                                 echo "Astuces 2 : Assure toi que les câbles ne soient ni tordus ni abîmés.</br></br>";
                             ?>
@@ -133,29 +137,37 @@
                 <div class="bandeau-miroir" id="testMiroir">
                     <div class="titre-miroir">
                         <?php
+                            echo "<h3>2</h3></br>";
                             echo "<h3>Test vidéo en miroir </h3></br></br>";
-                            echo "Vois-tu ton image appraître en double sur l'écran? </br></br>";
+                            echo "Vois-tu ton image apparaître sur l'écran? </br></br>";
                         ?>
                     </div>
                     <div class="start-miroir">
-                    <img src="includes/images/smiley-jaune.jpeg" id="smiley-jaune">
                         <?php
                             echo "<h3>Appuie sur le bouton</h3>"
                         ?>
+                    <img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-miroir">
+                    <img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-miroir">
+                    <img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
+                    <img src="includes/images/go.png" class="go">   
                     </div>
                 </div>
 
                 <div class="bandeau-video" id="testVideo">
                     <div class="titre-video">
                         <?php
+                            echo "<h3>3</h3></br>";
                             echo "<h3>Test vidéo avec ta classe !</h3> </br></br>"
                         ?>
                     </div>
                     <div class="start-debit">
-                    <img src="includes/images/smiley-rouge.jpeg" id="smiley-rouge">
                         <?php
                             echo "<h3>Appuie sur le bouton</h3>"
                         ?>
+                    <img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-visio">
+                    <img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-visio">
+                    <img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-visio">
+                    <img src="includes/images/go.png" class="go">
                     </div>
                 </div>
             </div>
