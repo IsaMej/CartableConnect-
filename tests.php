@@ -59,8 +59,7 @@
 									</p>
 								</div>
 
-								<div class="item">
-								<div class="bandeau-debit" id="testDebit">
+								<div class="item" id="testDebit">
 									<div class="titre-debit">
 										<?php
 											echo "<h3>1</h3></br>";
@@ -85,10 +84,8 @@
 										</div>
 									</div>
 								</div>
-								</div>
 
-								<div class="item">
-								<div class="bandeau-miroir" id="testMiroir">
+								<div class="item" id="testMiroir">
 									<div class="titre-miroir">
 										<?php
 											echo "<h3>2</h3></br>";
@@ -105,11 +102,10 @@
 											<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
 											<img src="includes/images/go.png" class="go"> -->  
 									</div>
-								</div>
+								
 								</div>
 
-								<div class="item">
-								<div class="bandeau-video" id="testVideo">
+								<div class="item" id="testVideo">
 									<div class="titre-video">
 										<?php
 											echo "<h3>3</h3></br>";
@@ -126,7 +122,6 @@
 									<img src="includes/images/go.png" class="go">-->
 									</div>
 								</div>
-							</div>
 							</div>
 						</div>
 					</div>
