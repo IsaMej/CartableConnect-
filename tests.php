@@ -154,19 +154,9 @@
                     <img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
                     <img src="includes/images/go.png" class="go">   
                     </div>
-                    <div>
-                            <script type="text/javascript" src="includes/js/webcam.min.js"></script>
-                            <div id="my_camera"></div>
-                            <script language="JavaScript">
-                            Webcam.set({
-                                width: 320,
-                                height: 240,
-                                image_format: 'jpeg',
-                                jpeg_quality: 90
-                            });
-                            Webcam.attach( '#my_camera' );
-                            </script>
-                    </div>
+                    
+                    <div id="my_camera"></div>
+                    <button onclick="webcam();return false;">TestButton</button>
                 </div>
 
                 <div class="bandeau-video" id="testVideo">
@@ -204,6 +194,8 @@
                 $(".loader").fadeOut("1000");
             })
         </script>
+        <script type="text/javascript" src="includes/js/webcam.min.js"></script>
+        <script type="text/javascript" src="includes/js/activateWebcam.js"></script>
     </body>
 
 </html>
