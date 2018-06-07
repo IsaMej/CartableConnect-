@@ -75,8 +75,24 @@
 									</div>
 								</div>
 
-								<div class="item">
-
+								<div class="bandeau-miroir" id="testMiroir">
+									<div class="titre-miroir">
+										<?php
+											echo "<h3>2</h3></br>";
+											echo "<h3>Test vidéo en miroir </h3></br></br>";
+											echo "Vois-tu ton image apparaître sur l'écran? </br></br>";
+										?>
+									</div>
+									<div class="start-miroir">
+										<?php
+											echo "<h3>Appuie sur le bouton</h3>"
+										?>
+											<img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-miroir">
+											<img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-miroir">
+											<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
+											<img src="includes/images/go.png" class="go">   
+											<img src="includes/images/loader.gif" class="loader">
+									</div>
 								</div>
 
 								<div class="bandeau-video" id="testVideo">

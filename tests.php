@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <a name="haut" id="haut"></a>  
+        <!--<a name="haut" id="haut"></a>  
         <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
             
         <script>
@@ -82,7 +82,7 @@
                 t--;
                 return t*t*t+1;
             }
-        </script>
+        </script>-->
 
         <div class="container">
                 <header>
@@ -153,6 +153,7 @@
                     <img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-miroir">
                     <img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
                     <img src="includes/images/go.png" class="go">   
+                    <img src="includes/images/loader.gif" class="loader">
                     </div>
                     
                     <div id="my_camera"></div>
