@@ -145,6 +145,13 @@ h3
     height: 15vw;
     width: 23vw;
 }
+
+.loader
+{
+    height: 25vw;
+    width: 20vw;
+}
+
 .bandeau-miroir
 {
     display: flex;
