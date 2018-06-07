@@ -57,6 +57,7 @@
 													C’est fait ? Alors c’est parti ! ";
 										?>
 									</p>
+									<button class="next">Commencer</button>
 								</div>
 
 								<div class="item" id="testDebit">
@@ -83,6 +84,7 @@
 											?>
 										</div>
 									</div>
+									<button class="next">Continuer</button>
 								</div>
 
 								<div class="item" id="testMiroir">
@@ -102,7 +104,7 @@
 											<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
 											<img src="includes/images/go.png" class="go"> -->  
 									</div>
-								
+									<button class="next">Continuer</button>
 								</div>
 
 								<div class="item" id="testVideo">
@@ -131,6 +133,8 @@
 
 		<script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
 		<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./public/js/script.js"></script>
+
     </body>
 
 </html>
