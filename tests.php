@@ -44,19 +44,16 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
 								<div class="item active">
-									<p>
-					
-										Bonjour ! Avant de commencer les tests, ta mission si tu l’acceptes est de demander à tes parents de vérifier quelques points : </br></br>
-
-										Vérifier que votre box est connectée.</br></br>
-													Éteindre votre décodeur TV.</br></br>
-													Vérifier que votre téléphone par internet est bien raccroché.</br></br>
-													Basculer vers un raccordement Ethernet si votre ordinateur est connecté en wifi. En effet, le débit d'une connexion wifi peut être influencé par des éléments perturbateurs.</br></br>
-													Fermer toutes les applications actives de votre ordinateur.</br></br>
-													Désactiver provisoirement vos éventuels logiciels de sécurité (Anti-Virus Firewall, Contrôle Parental…).</br></br>
-													C’est fait ? Alors c’est parti !
-
-									</p>
+									<ul>
+										<li>Bonjour ! Avant de commencer les tests, ta mission si tu l’acceptes est de demander à tes parents de vérifier quelques points :</li>
+										<li>Vérifier que votre box est connectée.</li>
+										<li>Éteindre votre décodeur TV.</li>
+										<li>Vérifier que votre téléphone par internet est bien raccroché.</li>			
+										<li>Basculer vers un raccordement Ethernet si votre ordinateur est connecté en wifi. En effet, le débit d'une connexion wifi peut être influencé par des éléments perturbateurs.</li>
+										<li>Fermer toutes les applications actives de votre ordinateur.</li>
+										<li>Désactiver provisoirement vos éventuels logiciels de sécurité (Anti-Virus Firewall, Contrôle Parental…).</li>
+										<li>C’est fait ? Alors c’est parti !</li>
+									</ul>
 									<button class="next" id="beginTest">Commencer</button>
 								</div>
 
@@ -68,14 +65,18 @@
 										
 									</div>
 									<div class="start-debit">
-										
+											<span id="testPurcent"></span>
+                                            <div id="progressBar"><div id="progress"></div></div>
+                                            
+                                            <input type="hidden" id="ulText" />
+                                            <input type="hidden" id="dlText" />
 											 <h3>Appuie sur le bouton</h3>
 										
 										<div class="astuceDebit">
-										<!--<img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-debit">
-										<img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-debit">
-										<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-debit">
-										<img src="includes/images/go.png" class="go">-->
+										<!--<img src="public/images/smiley-vert.png" class="smiley" id="smiley-vert-debit">
+										<img src="public/images/smiley-jaune.png" class="smiley" id="smiley-jaune-debit">
+										<img src="public/images/smiley-rouge.png" class="smiley" id="smiley-rouge-debit">
+										<img src="public/images/go.png" class="go">-->
 											
 												<img src="includes/images/astuces.png" id="astuces">
 												Résultat : Le débit de connexion est trop lent.</br></br>
@@ -97,10 +98,10 @@
 									</div>
 									<div class="start-miroir">
 										<h3>Appuie sur le bouton</h3>
-											<!--<img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-miroir">
-											<img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-miroir">
-											<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
-											<img src="includes/images/go.png" class="go"> -->  
+											<!--<img src="public/images/smiley-vert.png" class="smiley" id="smiley-vert-miroir">
+											<img src="public/images/smiley-jaune.png" class="smiley" id="smiley-jaune-miroir">
+											<img src="public/images/smiley-rouge.png" class="smiley" id="smiley-rouge-miroir">
+											<img src="public/images/go.png" class="go"> -->  
 									</div>
 									<button class="next" id="thirdTest">Continuer</button>
 								</div>
@@ -112,10 +113,10 @@
 									</div>
 									<div class="start-debit">
 										<h3>Appuie sur le bouton</h3>
-									<!--<img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-visio">
-									<img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-visio">
-									<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-visio">
-									<img src="includes/images/go.png" class="go">-->
+									<!--<img src="public/images/smiley-vert.png" class="smiley" id="smiley-vert-visio">
+									<img src="public/images/smiley-jaune.png" class="smiley" id="smiley-jaune-visio">
+									<img src="public/images/smiley-rouge.png" class="smiley" id="smiley-rouge-visio">
+									<img src="public/images/go.png" class="go">-->
 									</div>
 								</div>
 							</div>
