@@ -60,7 +60,6 @@
                 
                 
             <?php
-            
                 function formFunc() 
                 {
                     if(isset($_POST['submitForm']))
