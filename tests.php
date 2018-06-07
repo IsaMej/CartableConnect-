@@ -45,79 +45,73 @@
 							<div class="carousel-inner">
 								<div class="item active">
 									<p>
-										<?php
-											echo "Bonjour ! Avant de commencer les tests, ta mission si tu l’acceptes est de demander à tes parents de vérifier quelques points : </br></br>
+					
+										Bonjour ! Avant de commencer les tests, ta mission si tu l’acceptes est de demander à tes parents de vérifier quelques points : </br></br>
 
-													Vérifier que votre box est connectée.</br></br>
+										Vérifier que votre box est connectée.</br></br>
 													Éteindre votre décodeur TV.</br></br>
 													Vérifier que votre téléphone par internet est bien raccroché.</br></br>
 													Basculer vers un raccordement Ethernet si votre ordinateur est connecté en wifi. En effet, le débit d'une connexion wifi peut être influencé par des éléments perturbateurs.</br></br>
 													Fermer toutes les applications actives de votre ordinateur.</br></br>
 													Désactiver provisoirement vos éventuels logiciels de sécurité (Anti-Virus Firewall, Contrôle Parental…).</br></br>
-													C’est fait ? Alors c’est parti ! ";
-										?>
+													C’est fait ? Alors c’est parti !
+
 									</p>
-									<button class="next">Commencer</button>
+									<button class="next" id="beginTest">Commencer</button>
 								</div>
 
 								<div class="item" id="testDebit">
 									<div class="titre-debit">
-										<?php
-											echo "<h3>1</h3></br>";
-											echo "<h3>Test de la bande passante </h3></br></br>";                    
-										?>
+										
+											 <h3>1</h3></br>
+											 <h3>Test de la bande passante </h3></br></br>                 
+										
 									</div>
 									<div class="start-debit">
-										<?php
-											echo "<h3>Appuie sur le bouton</h3>"
-										?>
+										
+											 <h3>Appuie sur le bouton</h3>
+										
 										<div class="astuceDebit">
 										<!--<img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-debit">
 										<img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-debit">
 										<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-debit">
 										<img src="includes/images/go.png" class="go">-->
-											<?php
-												echo '<img src="includes/images/astuces.png" id="astuces">';
-												echo "Résultat : Le débit de connexion est trop lent.</br></br>";
-												echo "Astuces 1 : Eloigne le modem des sources de chaleur comme les radiateurs et dépoussière-le.                                            Place-le modem près des équipements informatiques.</br></br>";
-												echo "Astuces 2 : Assure toi que les câbles ne soient ni tordus ni abîmés.</br></br>";
-											?>
+											
+												<img src="includes/images/astuces.png" id="astuces">
+												Résultat : Le débit de connexion est trop lent.</br></br>
+												Astuces 1 : Eloigne le modem des sources de chaleur comme les radiateurs et dépoussière-le. Place-le modem près des équipements informatiques.</br></br>
+												Astuces 2 : Assure toi que les câbles ne soient ni tordus ni abîmés.</br></br>
+											
 										</div>
 									</div>
-									<button class="next">Continuer</button>
+									<button class="next" id="secondTest">Continuer</button>
 								</div>
 
 								<div class="item" id="testMiroir">
 									<div class="titre-miroir">
-										<?php
-											echo "<h3>2</h3></br>";
-											echo "<h3>Test vidéo en miroir </h3></br></br>";
-											echo "Vois-tu ton image apparaître sur l'écran? </br></br>";
-										?>
+										
+											<h3>2</h3></br>
+											<h3>Test vidéo en miroir </h3></br></br>
+											Vois-tu ton image apparaître sur l'écran? </br></br>
+									
 									</div>
 									<div class="start-miroir">
-										<?php
-											echo "<h3>Appuie sur le bouton</h3>"
-										?>
+										<h3>Appuie sur le bouton</h3>
 											<!--<img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-miroir">
 											<img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-miroir">
 											<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-miroir">
 											<img src="includes/images/go.png" class="go"> -->  
 									</div>
-									<button class="next">Continuer</button>
+									<button class="next" id="thirdTest">Continuer</button>
 								</div>
 
 								<div class="item" id="testVideo">
 									<div class="titre-video">
-										<?php
-											echo "<h3>3</h3></br>";
-											echo "<h3>Test vidéo avec ta classe !</h3> </br></br>"
-										?>
+										<h3>3</h3></br>
+										<h3>Test vidéo avec ta classe !</h3> </br></br>
 									</div>
 									<div class="start-debit">
-										<?php
-											echo "<h3>Appuie sur le bouton</h3>"
-										?>
+										<h3>Appuie sur le bouton</h3>
 									<!--<img src="includes/images/smiley-vert.png" class="smiley" id="smiley-vert-visio">
 									<img src="includes/images/smiley-jaune.jpeg" class="smiley" id="smiley-jaune-visio">
 									<img src="includes/images/smiley-rouge.jpeg" class="smiley" id="smiley-rouge-visio">
