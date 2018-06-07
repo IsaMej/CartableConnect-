@@ -79,3 +79,24 @@
 */
 
 #connectionTest .item {min-height:500px;background:#e5e5e5;}
+
+#beginTest
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#secondTest
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thirdTest
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

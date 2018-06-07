@@ -227,6 +227,13 @@ h3
     cursor : wait;
 }
 
+.next
+{
+    text-align: center;
+    margin: 0 auto;
+	display: inline-block;
+}
+
 
 
 /*a#cRetour{
