@@ -1,0 +1,81 @@
+/*
+* ----------------------------------------------------------------------------------------
+* 01. LOGIN CSS
+* ----------------------------------------------------------------------------------------
+*/
+
+#loginForm img.logo {margin:50px 0;}
+.form-signin{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox{margin-bottom: 10px;}
+.form-signin .checkbox{font-weight: normal;}
+.form-signin .form-control{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus{z-index: 2;}
+.form-signin input[type="text"]{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02. HEADER CSS
+* ----------------------------------------------------------------------------------------
+*/
+
+.navbar.navbar-default{
+	background-color:#fff;
+	border:none;
+}
+
+.navbar.navbar-default img{margin:20px 0;}
+
+.navbar-default .navbar-nav > li > a{text-transform:uppercase;color:#333;font-size:15px;letter-spacing:1px;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover{background:#fff;}
+.navbar-default .navbar-nav > .active > a{background:#fff;}
+.navbar-default .navbar-nav > .active > a:after{
+	content:"";
+	display:block;
+	width:40%;
+	float:right;
+	height:5px;
+	background:#FFCF00;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03. CONNECTION TEST CSS
+* ----------------------------------------------------------------------------------------
+*/
+
+#connectionTest .item {min-height:500px;background:#e5e5e5;}
