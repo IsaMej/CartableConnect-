@@ -80,6 +80,12 @@
 
 #connectionTest .item {min-height:500px;background:#e5e5e5;}
 
+/*
+<3 -----------------------------------------------
+STYLE BUTTON
+<3 -----------------------------------------------
+*/
+
 #beginTest
 {
     display: block;
@@ -99,4 +105,56 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*
+<3 ---------------------------------------------------
+STYLE P LIST
+<3 ---------------------------------------------------
+*/
+p
+{
+    padding: 3%;
+}
+
+ul
+{
+    padding: 3%;
+    list-style: none;
+}
+
+li
+{
+    margin-top: 5px;
+}
+
+
+#testDebit
+{
+    padding: 15px;
+}
+
+
+
+#progressBar{
+    width:90%;
+    height:0.3em;
+    background-color:#EEEEEE;
+    position:relative;
+    display:block;
+    margin:0 auto;
+    margin-bottom:2em;
+}
+#progress{
+    position:absolute;
+    top:0; left:0;
+    height:100%;
+    width:0%;
+    transition: width 2s;
+    background-color:#90BBFF;
+}
+
+.smiley
+{
+    display: none;
 }
