@@ -66,7 +66,7 @@
 									</div>
 								</div>
 
-								<div class="item" id="testDebit">
+								<div class="item active" id="testDebit">
 									<div class="row">
 										<div class="col-md-6">
 											 <h3 class="item-title">Des essais sont en cours mon général !</h3>
@@ -83,7 +83,7 @@
 												<p id="firstTestContent" class="result-content"></p>
 											</div>
 											
-											<a href="#" style="display:none" class="button blue big next" id="secondTest">Continuer</a>
+											<a href="#" style="display:block" class="button blue big next" id="secondTest">Continuer</a>
 										</div>
 										<div class="col-md-6">
 											<div id="testDebitInfo">
@@ -101,7 +101,7 @@
 									</div>
 								</div>
 
-								<div class="item active" id="testMiroir">
+								<div class="item" id="testMiroir">
 									<div class="row">
 										<div class="col-md-6">
 											 <h3 class="item-title">Est-ce que tu te vois ?</h3>

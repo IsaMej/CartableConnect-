@@ -10,7 +10,6 @@ $(document).ready(function() {
 	});
 });
 
-mirrorTest()
 /*
 * ----------------------------------------------------------------------------------------
 * 01. CAROUSEL FUNCTIONS
@@ -173,7 +172,7 @@ function mirrorTest()
 		// When a new remote stream is received
 		bc.streams.bind("onStreamAdded", function (remoteStream) {
 			// Insert the new remote stream into the page body
-			bc.attachStream(remoteStream, q("myCamera"));
+			bc.attachStream(remoteStream, q("#myCamera"));
 		});
 
 		// When a stream has been stopped
