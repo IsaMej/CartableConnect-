@@ -43,7 +43,7 @@
 						<div id="connectionTest" class="carousel slide" data-ride="carousel" data-interval="false">
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
-								<div id="firstPage" class="item">
+								<div id="firstPage" class="item active">
 									<div class="row">
 										<div class="col-md-5">
 											
@@ -66,7 +66,7 @@
 									</div>
 								</div>
 
-								<div class="item active" id="testDebit">
+								<div class="item" id="testDebit">
 									<div class="row">
 										<div class="col-md-6">
 											 <h3 class="item-title">Des essais sont en cours mon général !</h3>
@@ -83,7 +83,7 @@
 												<p id="firstTestContent" class="result-content"></p>
 											</div>
 											
-											<a href="#" style="display:block" class="button blue big next" id="secondTest">Continuer</a>
+											<a href="#" style="display:none" class="button blue big next" id="secondTest">Continuer</a>
 										</div>
 										<div class="col-md-6">
 											<div id="testDebitInfo">
@@ -130,18 +130,34 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="item" id="testVideo">
-									<div class="titre-video">
-										<h3>3</h3></br>
-										<h3>Test vidéo avec ta classe !</h3> </br></br>
-									</div>
-									<div class="start-debit">
-										<h3>Appuie sur le bouton</h3>
-									<!--<img src="public/images/smiley-vert.png" class="smiley" id="smiley-vert-visio">
-									<img src="public/images/smiley-jaune.png" class="smiley" id="smiley-jaune-visio">
-									<img src="public/images/smiley-rouge.png" class="smiley" id="smiley-rouge-visio">
-									<img src="public/images/go.png" class="go">-->
+								
+								<div class="item" id="testRetour">
+									<div class="row">
+										<div class="col-md-6">
+											 <h3 class="item-title">Est-ce que tu te vois ?</h3>
+											<div class="row">
+												<div class="col-md-12">
+													<div class="btn-container">
+														<div id="myCamera"></div>
+														<a href="#" class="button blue medium next" id="">Oui</a>
+														<a href="#" class="button red medium next" id="">Non</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div id="testDebitInfo">
+												<img src="./public/images/astuces.png" id="astuces">
+												<p>
+													<strong>Astuces 1 : </strong>
+													Eloigne le modem des sources de chaleur comme les radiateurs et dépoussière-le. Place-le modem près des équipements informatiques.
+												</p>
+												<p>
+													<strong>Astuces 2 : </strong>
+													Assure toi que les câbles ne soient ni tordus ni abîmés.
+												</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
