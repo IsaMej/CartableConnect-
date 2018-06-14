@@ -9,6 +9,8 @@ $(document).ready(function() {
 		mirrorTest();
 	});
 });
+
+mirrorTest()
 /*
 * ----------------------------------------------------------------------------------------
 * 01. CAROUSEL FUNCTIONS
@@ -53,6 +55,7 @@ function startSpeedTest() {
 				//test completed
 				w = null;
 				isValidBandwidth();
+				saveDataToDb();
 			}
 			
 			var prog = (Number(data[6])*2+Number(data[7])*2+Number(data[8]))/5;
@@ -99,6 +102,25 @@ function isValidBandwidth() {
 	}
 }
 
+function saveDataToDb() {
+	var upload 		= $("#ulText").val();
+	var download 	= $("#dlText").val();
+	
+	var formData = "upload=" + parseFloat(upload) + "&download=" + parseFloat(download);
+	
+    $.ajax({
+        url: './ajax/saveBandwidth.php',
+        type: "POST",
+        dataType: "text",
+        data : formData,
+        success: function(data)
+        {
+			
+        },
+        error: function(jqXHR, textStatus, errorThrown){}
+    });
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 02. MIRROR FUNCTIONS
@@ -107,11 +129,65 @@ function isValidBandwidth() {
 
 function mirrorTest()
 {
-    Webcam.set({
-    width: 320,
-    height: 240,
-    image_format: 'jpeg',
-    jpeg_quality: 90
-    });
-    Webcam.attach('#myCamera');
+	onBistriConferenceReady = function () {
+		var CONFERENCE_ROOM = "conference_demo";
+		var localStream;
+
+		// Initialize API client with application keys
+		bc.init( {
+			appId: "ea4ca2cc",
+			appKey: "1b8390cb2c7cc369b9a59ebbb721bcf6"
+		} );
+
+		// Test if the browser is WebRTC compatible
+		if ( !bc.isCompatible() ) {
+			// If the browser is not compatible, display an alert
+			alert( "your browser is not WebRTC compatible !" );
+			return;
+		}
+
+		// When local user is connected to the server
+		bc.signaling.bind("onConnected", function () {
+			// Ask the user to access to his webcam and set the resolution to 640x480
+			bc.startStream("320x240", function(stream){
+				// Set "localStream" variable with the local stream
+				localStream = stream;
+				// Insert the local webcam stream into the page body, mirror option invert the display
+				bc.attachStream(localStream, q("#myCamera"), {mirror: true} );
+				// Join a conference room called "conference_demo"
+				bc.joinRoom(CONFERENCE_ROOM);
+			});
+		});
+
+		// When the user has joined a room
+		bc.signaling.bind("onJoinedRoom", function(result) {
+			// Set room members array in a var "roomMembers"
+			var roomMembers = result.members;
+			 // Then, for every single members already present in the room ...
+			for ( var i=0, max=roomMembers.length; i<max; i++ ) {
+				// Request a call
+				bc.call( roomMembers[i].id, CONFERENCE_ROOM, {stream: localStream, 'video-codec': 'H264/9000' } );
+			}
+		});
+
+		// When a new remote stream is received
+		bc.streams.bind("onStreamAdded", function (remoteStream) {
+			// Insert the new remote stream into the page body
+			bc.attachStream(remoteStream, q("myCamera"));
+		});
+
+		// When a stream has been stopped
+		bc.streams.bind("onStreamClosed", function(stream) {
+			// Remove the stream from the page
+			bc.detachStream(stream);
+		});
+
+		// Open a new session on the server
+		bc.connect();
+	}
+}
+
+function q(query){
+	// return the DOM node matching the query
+	return document.querySelector( query );
 }
