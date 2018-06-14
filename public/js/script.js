@@ -3,8 +3,12 @@ $(document).ready(function() {
 		nextElement();
 		startSpeedTest();
 	});
+	
+	$(".container").on("click", "#secondTest", function() {
+		nextElement();
+		mirrorTest();
+	});
 });
-
 /*
 * ----------------------------------------------------------------------------------------
 * 01. CAROUSEL FUNCTIONS
@@ -77,4 +81,37 @@ setInterval(function(){
 function isValidBandwidth() {
 	var download 	= parseFloat($("#dlText").val());
 	var upload 		= parseFloat($("#ulText").val());
+	
+	if(download > 3 && upload > 3) {
+		$("#testDebit").find(".smiley-vert").css("display", "block");
+		$("#secondTest").css("display", "block");
+		$("#firstTestContent").html("C'est parfait, on peut continuer !");
+	}
+	else if(download < 0.1 && upload < 0.1) {
+		$("#testDebit").find(".smiley-rouge").css("display", "block");
+		$("#secondTest").css("display", "block");
+		$("#firstTestContent").html("Ouch ! La connexion n'est pas bonne mon capichef !");
+	}
+	else {
+		$("#testDebit").find(".smiley-jaune").css("display", "block");
+		$("#secondTest").css("display", "block");
+		$("#firstTestContent").html("Ca pourrait être mieux mais on peut poursuivre.");
+	}
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02. MIRROR FUNCTIONS
+* ----------------------------------------------------------------------------------------
+*/
+
+function mirrorTest()
+{
+    Webcam.set({
+    width: 320,
+    height: 240,
+    image_format: 'jpeg',
+    jpeg_quality: 90
+    });
+    Webcam.attach('#myCamera');
 }
