@@ -43,7 +43,7 @@
 						<div id="connectionTest" class="carousel slide" data-ride="carousel" data-interval="false">
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
-								<div id="firstPage" class="item active">
+								<div id="firstPage" class="item">
 									<div class="row">
 										<div class="col-md-5">
 											
@@ -131,31 +131,18 @@
 									</div>
 								</div>
 								
-								<div class="item" id="testRetour">
+								<div class="item active" id="testRetour">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-12">
 											 <h3 class="item-title">Est-ce que tu te vois ?</h3>
 											<div class="row">
 												<div class="col-md-12">
 													<div class="btn-container">
-														<div id="myCamera"></div>
-														<a href="#" class="button blue medium next" id="">Oui</a>
-														<a href="#" class="button red medium next" id="">Non</a>
+														<div id="cameras"></div>
+														<a id="call" href="#" class="button blue medium next" id="">Oui</a>
+														<a id="quit" href="#" class="button red medium next" id="">Non</a>
 													</div>
 												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div id="testDebitInfo">
-												<img src="./public/images/astuces.png" id="astuces">
-												<p>
-													<strong>Astuces 1 : </strong>
-													Eloigne le modem des sources de chaleur comme les radiateurs et dépoussière-le. Place-le modem près des équipements informatiques.
-												</p>
-												<p>
-													<strong>Astuces 2 : </strong>
-													Assure toi que les câbles ne soient ni tordus ni abîmés.
-												</p>
 											</div>
 										</div>
 									</div>

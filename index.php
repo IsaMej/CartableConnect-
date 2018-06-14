@@ -3,7 +3,7 @@
 
     function db_connect() {
 		$host = "localhost";
-		$dbname = "cartable_connect";
+		$dbname = "cartable";
 		$user = "root";
 		$password = "";
 		//$db = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
