@@ -43,7 +43,7 @@
 						<div id="connectionTest" class="carousel slide" data-ride="carousel" data-interval="false">
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
-								<div id="firstPage" class="item active">
+								<div id="firstPage" class="item">
 									<div class="row">
 										<div class="col-md-5">
 											
@@ -101,7 +101,7 @@
 									</div>
 								</div>
 
-								<div class="item" id="testMiroir">
+								<div class="item active" id="testMiroir">
 									<div class="row">
 										<div class="col-md-6">
 											 <h3 class="item-title">Est-ce que tu te vois ?</h3>
@@ -151,10 +151,10 @@
 			</div>
         </div>
 
-		<script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
-		<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-		<script src="./vendor/webcam/webcam.min.js"></script>
-		<script src="./public/js/script.js"></script>
+		<script type="text/javascript" src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://api.bistri.com/bistri.conference.min.js"></script>
+		<script type="text/javascript" src="./public/js/script.js"></script>
 
     </body>
 
