@@ -83,7 +83,7 @@
 												<p id="firstTestContent" class="result-content"></p>
 											</div>
 											
-											<a href="#" style="display:none" class="button blue big next" id="secondTest">Continuer</a>
+											<a href="#" style="display:block" class="button blue big next" id="secondTest">Continuer</a>
 										</div>
 										<div class="col-md-6">
 											<div id="testDebitInfo">

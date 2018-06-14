@@ -9,7 +9,6 @@ $(document).ready(function() {
 		mirrorTest();
 	});
 });
-
 testCall();
 /*
 * ----------------------------------------------------------------------------------------
@@ -162,7 +161,7 @@ function mirrorTest() {
 
 	// When local user is connected to the server
 	bc.signaling.bind("onConnected", function () {
-		// Ask the user to access to his webcam and set the resolution to 640x480
+		// Ask the user to access to his webcam and set the resolution to 340x220
 		bc.startStream("400x300", function(stream){
 			// Set "localStream" variable with the local stream
 			localStream = stream;
@@ -278,8 +277,7 @@ function testCall() {
 
 		// when a new remote stream is received
 		bc.streams.bind( "onStreamAdded", function ( remoteStream ) {
-			// insert the new remote stream into div#video_container node
-			bc.attachStream( remoteStream, q( "#video_container" ) );
+			bc.attachStream( remoteStream, q( "#cameras" ) );
 		} );
 
 		// when a local or a remote stream has been stopped
@@ -296,13 +294,13 @@ function testCall() {
 		// when a remote user presence status is received
 		bc.signaling.bind( "onPresence", function ( result ) {
 			if( result.presence != "offline" ){
-				// ask the user to access to his webcam and set the resolution to 640x480
-				bc.startStream( "640x480", function( stream ){
+				// ask the user to access to his webcam and set the resolution to 340x220
+				bc.startStream( "340x220", function( stream ){
 					// when webcam access has been granted
 					// show pane with id "pane_2"
 					showPanel( "pane_2" );
 					// insert the local webcam stream into the page body, mirror option invert the display
-					bc.attachStream( stream, q( "#video_container" ), { mirror: true } );
+					bc.attachStream( stream, q( "#cameras" ), { mirror: true } );
 					// invite user
 					bc.call( result.id, CONFERENCE_ROOM, { stream: stream } );
 				} );
@@ -317,15 +315,15 @@ function testCall() {
 			// ask the user to accept or decline the invitation
 			if( confirm( request.name + " is inviting you to join his conference room. Click \"Ok\" to start the call." ) ){
 				// invitation has been accepted
-				// ask the user to access to his webcam and set the resolution to 640x480
-				 bc.startStream( "640x480", function( stream ){
+				// ask the user to access to his webcam and set the resolution to 340x220
+				 bc.startStream( "340x220", function( stream ){
 					// when webcam access has been granted
 					// show pane with id "pane_2"
 					showPanel( "pane_2" );
 					// set "localStream" variable with the local stream
 					localStream = stream;
 					// insert the local webcam stream into the page body, mirror option invert the display
-					bc.attachStream( stream, q( "#video_container" ), { mirror: true } );
+					bc.attachStream( stream, q( "#cameras" ), { mirror: true } );
 				   // then join the room specified in the "request" object
 					bc.joinRoom( request.room );
 				} );
