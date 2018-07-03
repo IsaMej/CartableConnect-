@@ -130,8 +130,8 @@
 													<strong>Astuces 3 : </strong>
 													Vérifie que les pilotes soit bien à jour</br>
 													(démarrer--->clic droit sur poste de travail--->propriétés--->matériel--->gestionnaire de périphérique. 
-Il te suffit de faire un clic droit --->propriétés sur un matériel et aller sur l'onglet pilotes. 
-Pour savoir que c'est les pilotes les plus récents il suffit de comparer la version avec ceux disponibles sur le site du fabricant. )
+													Il te suffit de faire un clic droit --->propriétés sur un matériel et aller sur l'onglet pilotes. 
+													Pour savoir que c'est les pilotes les plus récents il suffit de comparer la version avec ceux disponibles sur le site du fabricant. )
 												</p>
 											</div>
 										</div>
