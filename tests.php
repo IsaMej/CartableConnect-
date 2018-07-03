@@ -83,7 +83,7 @@
 												<p id="firstTestContent" class="result-content"></p>
 											</div>
 											
-											<a href="#" style="display:none" class="button blue big next" id="secondTest">Continuer</a>
+											<a href="#" style="display:block" class="button blue big next" id="secondTest">Continuer</a>
 										</div>
 										<div class="col-md-6">
 											<div id="testDebitInfo">
@@ -101,7 +101,7 @@
 									</div>
 								</div>
 
-								<div class="item active" id="testMiroir">
+								<div class="item" id="testMiroir">
 									<div class="row">
 										<div class="col-md-6">
 											 <h3 class="item-title">Est-ce que tu te vois ?</h3>
@@ -137,18 +137,21 @@ Pour savoir que c'est les pilotes les plus récents il suffit de comparer la ver
 										</div>
 									</div>
 								</div>
-
-								<div class="item" id="testVideo">
-									<div class="titre-video">
-										<h3>3</h3></br>
-										<h3>Test vidéo avec ta classe !</h3> </br></br>
-									</div>
-									<div class="start-debit">
-										<h3>Appuie sur le bouton</h3>
-									<!--<img src="public/images/smiley-vert.png" class="smiley" id="smiley-vert-visio">
-									<img src="public/images/smiley-jaune.png" class="smiley" id="smiley-jaune-visio">
-									<img src="public/images/smiley-rouge.png" class="smiley" id="smiley-rouge-visio">
-									<img src="public/images/go.png" class="go">-->
+								
+								<div class="item active" id="testRetour">
+									<div class="row">
+										<div class="col-md-12">
+											 <h3 class="item-title">Est-ce que tu te vois ?</h3>
+											<div class="row">
+												<div class="col-md-12">
+													<div class="btn-container">
+														<div id="cameras"></div>
+														<a id="call" href="#" class="button blue medium next" id="">Oui</a>
+														<a id="quit" href="#" class="button red medium next" id="">Non</a>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
